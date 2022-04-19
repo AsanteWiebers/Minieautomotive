@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MinieAutomotive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow+Condensed:ital,wght@0,400;0,500;1,300&family=Barlow:wght@300;400;500&family=Bellefair&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
@@ -15,28 +20,35 @@
 <body>
     <nav>
         <div>
-            <p>MinieAutomotive</p>
+            <p class="logo text-white">MinieAutomotive</p>
         </div>
-        <ul class="nav_list">
-            <a class="nav_link" href="">
-                <li>Home</li>
-            </a>
-            <a class="nav_link" href="/occasions.html">
-                <li>Occasions</li>
-            </a>
-            <a class="nav_link" href="">
-                <li>Over Ons</li>
-            </a>
-            <a class="nav_link" href="">
-                <li>Reviews</li>
-            </a>
-            <a class="nav_link" href="">
-                <li>Contact</li>
-            </a>
-        </ul>
+        <div id="nav_links">
+            <ul class="nav_list">
+                <a class="nav_link" href="#home">
+                    <li>Home</li>
+                </a>
+                <a class="nav_link" href="/occasions.html">
+                    <li>Occasions</li>
+                </a>
+                <a class="nav_link" href="#overons">
+                    <li>Over Ons</li>
+                </a>
+                <a class="nav_link" href="#revieuws">
+                    <li>Reviews</li>
+                </a>
+                <a class="nav_link" href="#contact">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+        <a href="javascript:void(0)">
+            <svg class="hamburger" width="24" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#fff" fill-rule="evenodd" /></svg>
+        </a>
     </nav>
-    <div class="hero">
-        <h1>Scherpe Prijzen</h1>
+
+    <div class="hero_bg">
+        <h1 class="fw-700">Scherpe Prijzen</h1>
     </div>
     <main>
         <div class="container">
