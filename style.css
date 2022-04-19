@@ -92,6 +92,7 @@ p {
     padding: 0 2em;
     max-width: 80rem;
     margin: 0 auto;
+    
 }
 
 .grid-container {
@@ -119,12 +120,60 @@ p {
     font-weight: 700;
 }
 
+.fw-800 {
+    font-weight: 800;
+}
+
 .text-white {
     color: hsl(var(--clr-white));
+}
+.text-dark {
+    color: hsl(var(--clr-dark));
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.underscore {
+    text-decoration: underline;
 }
 
 /* ------- */
 
+/* buttons */
+
+.btn-dark {
+    background-color: hsl(var(--clr-white));
+    border: 1px solid hsl(var(--clr-dark));
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 1em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-light {
+    border: 1px solid hsl(var(--clr-white));
+    border-radius: 30px;
+    background-color: transparent;
+    color: hsl(var(--clr-white));
+    cursor: pointer;
+    padding: 1em;
+    margin: 2em auto;
+    text-align: center;
+}
+
+
+.btn-dark:hover{
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-white));
+}
+
+.btn-light:hover{
+    background-color: hsl(var(--clr-white));
+    color: hsl(var(--clr-dark));
+}
 
 /* navigation */
 
@@ -143,6 +192,8 @@ nav {
     background-color: hsl(var(--clr-dark));
 }
 
+/* hero section */
+
 .hero_bg {
    background-image: url(/assets/Backgrounds/Cybertruck-Image.jpg); 
    background-size: cover;
@@ -158,4 +209,75 @@ nav {
 
 h1 {
     text-align: center;
+}
+.hero_container {
+    margin: 2em 0;
+}
+.hero_text {
+    margin: 3em 0 ;
+}
+
+/*  --- */
+
+.grid_container {
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+}
+
+/* cta container */
+
+.cta {
+    margin: 5em 0 5em;
+}
+
+.bg_car {
+    background-image: url(/assets/Backgrounds/Tesla_model_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vh;
+    max-width: 100%;
+}
+
+.bg_car2 {
+    background-image: url(/assets/Backgrounds/Taycan-Image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vh;
+    max-width: 100%;
+}
+
+.cta_container {
+    color: hsl(var(--clr-white));
+    padding: 1em;
+    z-index: 2;
+}
+
+.cta_heading {
+    text-align: left;
+}
+
+.cta_intro {
+    padding: 1em 2em 0;
+    margin: 1em 0 1em;
+}
+
+.cta_image {
+    display: none;
+}
+
+.cta_links {
+    margin: 1em 0 0 ;
+}
+
+/* contact */
+
+.contact_container {
+    padding: 1em;
+    height: 100%;
+    color: hsl(var(--clr-white));
 }
