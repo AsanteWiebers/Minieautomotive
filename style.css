@@ -1,0 +1,72 @@
+:root {
+
+    --clr-dark: 230 35% 7%;
+    --clr-light-blue: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+
+    --fs-900: 9.375rem; 
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: 'Barlow', sans-serif;
+    --ff-serif: 'Bellefair', serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+img,
+picture {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+body {
+    
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    color: hsl(var(--clr-dark));
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-weight: 400;
+}
