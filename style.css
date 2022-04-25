@@ -41,6 +41,7 @@ ul,
 li {
     list-style: none;
     text-decoration: none;
+    padding: 0;
 }
 
 img,
@@ -210,7 +211,23 @@ p {
     color: var(--clr-gold);
 }
 
+.btn-block_light {
+    border: none;
+    padding: 1em 7em;
+    cursor: pointer;
+}
+.btn-block_dark {
+    border: none;
+    padding: 1em 6.8em;
+    background-color: var(--clr-dark-light);
+    color: hsl(var(--clr-white));
+    cursor: pointer;  
+}
 /* navigation */
+
+.card {
+    display: none;
+}
 
 .logo {
     font-family: var(--ff-serif);
@@ -243,7 +260,6 @@ nav {
     background-color: hsl(var(--clr-dark));
 }
 
-
 /* hero section */
 
 .hero_bg {
@@ -259,17 +275,23 @@ nav {
     padding: 5em 0;
 }
 
-h1 {
-    text-align: center;
+.hero_title {
+    text-align: left;
 }
 .hero_container {
     margin: 2em 0;
 }
+
 .hero_text {
     margin: 3em 0 ;
 }
 
+.search {
+    text-align: left;
+}
+
 /*  --- */
+/* grid containers */
 
 .grid_container {
     margin: 2em 0;
@@ -279,14 +301,32 @@ h1 {
     gap: 1em;
 }
 
+.grid_container_gallery {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 3em;
+}
+
+.search_container {
+    padding: 3em;
+    display: block;
+}
+
+.search_title {
+    margin: 0 0 1em;
+}
+
+
+
 /* cta container */
 
 .cta {
-    margin: 5em 0 5em;
+    margin: 5em 2.1em 5em;
 }
 
 .bg_car {
-    background-image: url(/assets/Backgrounds/Tesla_model_3.jpg);
+    background-image: url(/assets/Backgrounds/Tesla-Backgrounds-Images.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -305,12 +345,15 @@ h1 {
 
 .cta_container {
     color: hsl(var(--clr-white));
+    background-color: hsl(var(--clr-dark) /0.5);
+    height: 100%;
     padding: 1em;
     z-index: 2;
 }
 
 .cta_heading {
     color: hsl(var(--clr-white));
+    margin: 0 0 1em;
     text-align: left;
 }
 
@@ -333,8 +376,12 @@ h1 {
     padding: 1em;
     height: 100%;
     color: hsl(var(--clr-white));
+    background-color: hsl(var(--clr-dark) /0.5);
 }
 
+.contact_heading {
+    margin: 0 0 1em;
+}
 /* footer */
 
 footer {
@@ -348,14 +395,21 @@ footer {
 }
 
 .social_link {
-    position: relative;
-    left: -45px;
     padding: 0 5px 0;
     margin: 0 0 2em;
 }
 
 li.nav_desk_links  {
     display: none;
+}
+
+.pay_list {
+    display: flex;
+    margin: 1em 0 1em;
+}
+
+.pay_links {
+    margin-right: 20px;
 }
 
 @media(min-width: 900px){
@@ -366,6 +420,22 @@ li.nav_desk_links  {
         display: none;
     }
 
+    h2 {
+        text-align: center;
+        margin: 2em 0 0 ;
+    }
+
+    .hero_title {
+        text-align: center;
+        font-size: var(--fs-700);
+    }
+
+    .search_container {
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-around;
+    }
+    
     /* aanpassen  */
 
     .nav_desk {
@@ -408,12 +478,15 @@ li.nav_desk_links  {
         grid-template-columns: repeat(6,1fr);
     }
 
+
     .card {
-        border: 1px solid red;
+        display: block;
+        color: hsl(var(--clr-white));
+        background-color: hsl(var(--clr-dark) /0.5);
         border-radius: 20px;
         padding: 1em;
         position: relative;
-        top: 18em;
+        top: 17.5em;
         left: 3em;
         width: 30%;
     }
@@ -421,4 +494,117 @@ li.nav_desk_links  {
     .card-title {
         width: 70%;
     }
-}
+
+    .socials_list {
+        display: flex;
+    }   
+
+    .socials_card_link {
+        margin-right: 25px;
+    }
+
+    /* hover states */
+
+    :hover.socials_card_link,
+    :hover.social_link {
+        color: var(--clr-gold);
+        cursor: pointer;
+        transition: 800ms;
+    }
+
+    
+
+    /* ------ */
+
+    .bg_car {
+        background-image: url(/assets/Backgrounds/Tesla-Backgrounds-Images.jpg);
+        height: 650px;
+    }
+
+    .cta_container {
+        position: relative;
+        left: 35em;
+        background-color: hsl(var(--clr-dark) /0.5);
+        max-width: 45%;
+        height: 100%;
+    }
+
+    section {
+        height: 750px;
+    }
+
+    .cta_heading {
+        margin: 0 0 1em;
+    }
+
+    .cta_text {
+        margin: 0 0 3em;
+    }
+
+    /* intro cta */
+
+    .cta {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cta_intro {
+        text-align: center;
+        margin-top: 5em;
+    }
+
+    .cta_intro_title {
+        font-size: var(--fs-700);
+    }
+
+    .cta_image {
+        display: block;
+        border-radius: 20px;
+        margin: 1em auto;
+        width: 50%;
+    }
+
+    /* contact */
+
+    .bg_car2 {
+        height: 650px;
+    }
+
+    .contact_container {
+        position: relative;
+        left: 8em;
+        background-color: hsl(var(--clr-dark) /0.5);
+        max-width: 45%;
+        height: 100%;
+    }
+
+    .contact_heading {
+        margin: 0 0 1em;
+        text-align: left;
+    }
+
+    .contact_text {
+        margin: 0 0 3em;
+    }
+
+    /* footer */
+
+    .footer_container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pay_list {
+        display: flex;
+        padding: 1em;
+    }
+
+    .pay_links {
+        margin-right: 25px;
+    }
+
+    hr {
+        display: none;
+    }
+}   
+
