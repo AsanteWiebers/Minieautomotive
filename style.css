@@ -80,6 +80,8 @@ p {
     font-weight: 400;
 }
 
+/* Utility classes */
+
 .flex {
     display: flex;
     gap: var(--gap, 1rem);
@@ -99,6 +101,10 @@ p {
 .grid-container {
     display: grid;
     grid-template-columns: 2em minmax(0,40rem) minmax(0,40rem) 2em;
+}
+
+html.sr .load-hidden {
+    visibility: hidden;
 }
 
 /* fonts */
