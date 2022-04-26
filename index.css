@@ -5,6 +5,8 @@
     --clr-white: 0 0% 100%;
     --clr-gold: #F0A500;
     --clr-dark-light: #393E46;
+    --clr-black: #180A0A ;
+    --clr-grey: #737477;
 
     --fs-900: 9.375rem; 
     --fs-800: 6.25rem;
@@ -58,7 +60,6 @@ select {
 }
 
 body {
-    
     font-family: var(--ff-sans-normal);
     font-size: var(--fs-400);
     color: hsl(var(--clr-dark));
@@ -102,6 +103,8 @@ p {
     display: grid;
     grid-template-columns: 2em minmax(0,40rem) minmax(0,40rem) 2em;
 }
+
+/* ------- */
 
 html.sr .load-hidden {
     visibility: hidden;
@@ -163,11 +166,15 @@ html.sr .load-hidden {
     color: hsl(var(--clr-dark));
 }
 .text-gold {
-    color: #F0A500;
+    color: var(--clr-gold);
 }
 
 .text-dark-light {
-    color: #393E46;
+    color: var(--clr-dark-light);
+}
+
+.text-grey {
+    color: var(--clr-grey);
 }
 
 .uppercase {
@@ -207,28 +214,38 @@ html.sr .load-hidden {
     text-align: center;
 }
 
-.btn-dark:hover{
-    background-color: hsl(var(--clr-dark));
-    color: var(--clr-gold);
-}
-
-.btn-light:hover{
-    background-color: hsl(var(--clr-dark));
-    color: var(--clr-gold);
-}
-
 .btn-block_light {
     border: none;
-    padding: 1em 7em;
+    padding: 20px 103px;
     cursor: pointer;
+    max-width: max-content;
 }
+
 .btn-block_dark {
     border: none;
-    padding: 1em 6.8em;
+    padding: 20px 100px;
     background-color: var(--clr-dark-light);
     color: hsl(var(--clr-white));
     cursor: pointer;  
+    margin: 0 auto;
 }
+
+/* hover states */
+
+.btn-light:hover {
+    background-color: hsl(var(--clr-dark));
+    color: var(--clr-gold);
+}
+
+.btn-dark:hover {
+    background-color: hsl(var(--clr-dark));
+    color: var(--clr-gold);
+}
+
+.btn-block_dark:hover {
+    background-color: var(--clr-black);
+}
+
 /* navigation */
 
 .card {
@@ -241,7 +258,7 @@ html.sr .load-hidden {
 
 #nav_mob_links {
     display: none;
-    background-color: #F0A500;
+    background-color: var(--clr-gold);
     border-radius: 20px;
     position: absolute;
     margin: 3em auto 0;
@@ -308,23 +325,34 @@ nav {
 }
 
 .grid_container_gallery {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(6,1fr);
+    display: block;
     gap: 3em;
+    margin: 7em auto;
 }
 
+/* occasions page */
 .search_container {
-    padding: 3em;
+    padding: 2em;
     display: block;
+    text-align: center;
+    border: 1px solid red;
 }
 
 .search_title {
     margin: 0 0 1em;
 }
 
+.car_description {
+    margin: 0 0 1em;
+}
 
+.car_info {
+    margin: 1em 0 1em;
+}
 
+.car_image {
+    border-radius: 20px;
+}
 /* cta container */
 
 .cta {
@@ -436,10 +464,40 @@ li.nav_desk_links  {
         font-size: var(--fs-700);
     }
 
+    /* occasions page */
+
     .search_container {
-        border: 1px solid red;
         display: flex;
         justify-content: space-around;
+    }
+
+    .btn-block_light {
+        border: none;
+        padding: 1em 7em;
+        cursor: pointer;
+    }
+
+    .btn-block_dark {
+        border: none;
+        padding: 1em 6.8em;
+        background-color: var(--clr-dark-light);
+        color: hsl(var(--clr-white));
+        cursor: pointer;  
+    }
+
+    .grid_container {
+        margin: 2em 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1em;
+    }
+    
+    .grid_container_gallery {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 3em;
     }
     
     /* aanpassen  */
@@ -517,8 +575,6 @@ li.nav_desk_links  {
         cursor: pointer;
         transition: 800ms;
     }
-
-    
 
     /* ------ */
 
