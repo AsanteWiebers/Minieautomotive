@@ -20,9 +20,20 @@
 
 <body>
     <nav>
-        <div>
-            <p class="logo text-white load-hidden">Minie <span class="text-gold">Automotive</span> </p>
+        <div class="nav_desk">
+            <div>
+                <p class="logo text-white load-hidden">Minie <span class="text-gold">Automotive</span> </p>
+            </div>
+            <ul class="nav_desk_list flex">
+                <li class="nav_desk_links text-white">Home</li>
+                <a href="occasions.html">
+                    <li class="nav_desk_links text-white">Occasions</li>
+                </a>
+                <li class="nav_desk_links text-white">Reviews</li>
+                <li class="nav_desk_links text-white">Contact</li>
+            </ul>
         </div>
+
 
         <div class="sr_nav" id="nav_mob_links">
             <ul class="nav_list">
@@ -43,16 +54,7 @@
                 </a>
             </ul>
         </div>
-        <div class="nav_desk">
-            <ul class="nav_desk_list flex">
-                <li class="nav_desk_links text-white">Home</li>
-                <a href="occasions.html">
-                    <li class="nav_desk_links text-white">Occasions</li>
-                </a>
-                <li class="nav_desk_links text-white">Reviews</li>
-                <li class="nav_desk_links text-white">Contact</li>
-            </ul>
-        </div>
+
 
         <a href="javascript:void(0)">
             <svg class="hamburger" width="24" height="18" xmlns="http://www.w3.org/2000/svg" onclick="menuOpen()">
@@ -85,7 +87,7 @@
                 <ul class="socials_list">
 
                     <a target="_blank" href="https://nl-nl.facebook.com/" rel="norferrer">
-                        <li class="socials_card_link"><i class="fa-brands fa-facebook-square"></i></li>
+                        <li class="socials_card_link"><i class="fa-brands fa-youtube"></i></li>
                     </a>
                     <a target="_blank" href="https://www.instagram.com/">
                         <li class="socials_card_link"><i class="fa-brands fa-instagram"></i></li>
@@ -95,6 +97,9 @@
                     </a>
                     <a target="_blank" href="https://twitter.com/?lang=nl">
                         <li class="socials_card_link"> <i class="fa-brands fa-twitter"></i></li>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/?lang=nl">
+                        <li class="socials_card_link"><i class="fa-brands fa-whatsapp-square"></i></li>
                     </a>
                 </ul>
             </div>
@@ -239,61 +244,10 @@
                     </ul>
                     <p>BAN: NL 34 RABO 0362612021</p><br>
                 </div>
-
-                <hr><br>
             </div>
         </div>
     </footer>
     <script src="main.js"></script>
-    <script>
-        ScrollReveal({
-            reset: true,
-            distance: '60px',
-            duration: 2500,
-            delay: 400
-        });
-
-
-        ScrollReveal().reveal('.logo', {
-            delay: 500
-        });
-        ScrollReveal().reveal('.card', {
-            delay: 600,
-            origin: 'left'
-        });
-
-        ScrollReveal().reveal('.hero_title', {
-            delay: 600,
-            origin: 'left'
-        });
-
-        ScrollReveal().reveal('.hero_text', {
-            delay: 600,
-            origin: 'right'
-        });
-
-        ScrollReveal().reveal('.car_logo', {
-            delay: 600,
-            origin: 'bottom',
-            interval: 200
-        });
-
-        ScrollReveal().reveal('.cta_intro_title', {
-            delay: 600,
-            origin: 'bottom'
-        });
-
-        ScrollReveal().reveal('.cta_heading', {
-            delay: 700,
-            origin: 'right'
-        });
-
-        ScrollReveal().reveal('.contact_heading', {
-            delay: 700,
-            origin: 'right'
-        });
-    </script>
-
 </body>
 
 </html>

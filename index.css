@@ -1,3 +1,9 @@
+/* To do's
+    - Gallery main page
+    - Mobile menu smooth transition
+    - 
+ */
+
 :root {
 
     --clr-dark: 230 35% 7%;
@@ -283,6 +289,18 @@ nav {
     background-color: hsl(var(--clr-dark));
 }
 
+.fa-youtube {
+    color: #ff0000;
+}
+
+.fa-twitter {
+    color: #00aced;
+}
+
+.fa-whatsapp-square {
+    color: #25d366;
+}
+
 /* hero section */
 
 .hero_bg {
@@ -317,9 +335,10 @@ nav {
 /* grid containers */
 
 .grid_container {
-    display: grid;
+    display: none;
+    /* display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr); */
 }
 
 .grid_container_gallery {
@@ -357,6 +376,7 @@ nav {
 
 .car_description {
     margin: 0 0 1em;
+    
 }
 
 .car_info {
@@ -364,7 +384,10 @@ nav {
 }
 
 .car_image {
-    border-radius: 20px;
+    
+    object-fit: cover;
+    height: 35vh;
+    width: 100%;
 }
 /* cta container */
 
@@ -397,6 +420,17 @@ nav {
     padding: 1em;
     z-index: 2;
 }
+
+@media screen and (min-width: 1400px) {
+
+    .cta_container {
+        color: hsl(var(--clr-white));
+        background-color: hsl(var(--clr-dark) /0.5);
+        height: 100%;
+        padding: 1em;
+        z-index: 2;
+    }
+  }
 
 .cta_heading {
     color: hsl(var(--clr-white));
@@ -463,6 +497,32 @@ li.nav_desk_links  {
 
     /* navigation */
 
+    .nav_desk {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0 3em;
+        width: 100%;
+    }
+
+    li.nav_desk_links  {
+        display: block;
+        /* text-transform: uppercase; */
+        letter-spacing: 4px;
+    }
+
+    li.nav_desk_links:hover {
+        color: var(--clr-gold);
+        cursor: pointer;
+        transition: 800ms;
+    }
+
+    .logo {
+        font-size: var(--fs-500);
+        
+    }
+
     svg.hamburger {
         display: none;
     }
@@ -481,7 +541,6 @@ li.nav_desk_links  {
 
     .search_container {
         display: flex;
-        border: 2px solid red;
     }
 
     .search_title {
@@ -514,31 +573,9 @@ li.nav_desk_links  {
         grid-template-rows: repeat(1, 1fr);
     }
 
-    /* aanpassen  */
-
-    .nav_desk {
-        align-items: center;
-        display: flex;
-        position: relative;
-        left: 20em;
+    .car_title {
+        text-align: left;
     }
-
-    li.nav_desk_links  {
-        display: block;
-    }
-
-    li.nav_desk_links:hover {
-        color: var(--clr-gold);
-        cursor: pointer;
-        transition: 800ms;
-    }
-
-    .logo {
-        position: relative;
-        left: 6em;
-        font-size: var(--fs-500);
-    }
-    /* ------- */
 
     .hero_bg {
         height: 91vh;
@@ -679,8 +716,6 @@ li.nav_desk_links  {
         margin-right: 25px;
     }
 
-    hr {
-        display: none;
-    }
+   
 }   
 
