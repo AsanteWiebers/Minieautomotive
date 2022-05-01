@@ -347,6 +347,7 @@ nav {
     margin: 7em auto;
 }
 
+
 @media(min-width:768px){
   .grid_container_gallery {
     display: grid;
@@ -384,10 +385,18 @@ nav {
 }
 
 .car_image {
-    
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
     object-fit: cover;
     height: 35vh;
     width: 100%;
+}
+
+.car_image:hover {
+    opacity: 0.3;
+    cursor: pointer;
 }
 /* cta container */
 
