@@ -1,5 +1,5 @@
 /* To do's
-    - Gallery main page
+    - 
     - Mobile menu smooth transition
     - 
  */
@@ -13,6 +13,7 @@
     --clr-dark-light: #393E46;
     --clr-black: #180A0A ;
     --clr-grey: #737477;
+
 
     --fs-900: 9.375rem; 
     --fs-800: 6.25rem;
@@ -135,11 +136,9 @@ html.sr .load-hidden {
 .fw-700 {
     font-weight: 700;
 }
-
 .fw-800 {
     font-weight: 800;
 }
-
 .fs-200 {
     font-size: 0.875rem;
 }
@@ -254,6 +253,14 @@ html.sr .load-hidden {
 
 /* navigation */
 
+nav {
+    padding: 1em;
+    background-color: hsl(var(--clr-dark));
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid orange;
+}
+
 .card {
     display: none;
 }
@@ -264,30 +271,31 @@ html.sr .load-hidden {
 
 #nav_mob_links {
     display: none;
-    background-color: var(--clr-gold);
-    border-radius: 20px;
+    background-color: var(--clr-black);
     position: absolute;
-    margin: 3em auto 0;
-    padding: 1em;
-    height: 20em;
-    left: 7em;
-    width: 15em;
+    text-transform: uppercase;
+}
+
+.nav_list {
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 6em;
 }
 
 .nav_link {
     color: hsl(var(--clr-white));
 }
 
+.nav_link:hover {
+    color: var(--clr-gold);
+    transition: 800ms;
+}
+
 .mob_link {
  padding: 0 0 2.2em;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-    background-color: hsl(var(--clr-dark));
-}
+/* card social icons */
 
 .fa-youtube {
     color: #ff0000;
@@ -375,9 +383,11 @@ nav {
     margin: 0 0 1em;
 }
 
+.car_title {
+    margin: 1em 0 0 ;
+}
 .car_description {
-    margin: 0 0 1em;
-    
+    margin: 0 0 1em; 
 }
 
 .car_info {
@@ -458,6 +468,8 @@ nav {
 
 .cta_links {
     margin: 1em 0 0 ;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 /* contact */
@@ -552,6 +564,16 @@ li.nav_desk_links  {
         display: flex;
     }
 
+    .btn_container {
+        display: flex;
+        width: 50%;
+    }
+
+    @media(min-width:900px) and (max-width: 1000px){
+        .btn_container {
+            display: block;
+        }
+    }
     .search_title {
         margin: 0 4.6em;
         display: block;
@@ -559,6 +581,8 @@ li.nav_desk_links  {
     }
 
     /* buttons */
+
+    
 
     .btn-block_light {
         border: none;
