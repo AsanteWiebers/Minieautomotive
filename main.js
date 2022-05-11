@@ -64,11 +64,18 @@ ScrollReveal().reveal('.contact_heading', {
 // Aflever pakket page 
 
 ScrollReveal().reveal('.repair_image', {
-    delay: 700,
+    delay: 600,
     origin: 'right'
 });
 ScrollReveal().reveal('.repair_image_2', {
-    delay: 700,
+    delay: 600,
     origin: 'left'
+});
+
+// over ons page 
+
+ScrollReveal().reveal('.img_aboutus', {
+    delay: 600,
+    origin: 'right'
 });
 
