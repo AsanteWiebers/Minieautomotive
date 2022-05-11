@@ -457,7 +457,8 @@ nav {
     letter-spacing: 2px;
 }
 
-/* contact */
+
+/* contact page */
 
 .contact_container {
     padding: 1em;
@@ -466,9 +467,74 @@ nav {
     background-color: hsl(var(--clr-dark) /0.5);
 }
 
+.hr {
+    border: 1px solid hsl(var(--clr-dark) /0.5);
+    margin: 3em 0 0;
+}
+
 .contact_heading {
     margin: 0 0 1em;
 }
+
+.info_title {
+    margin: 0.5em 0 1em;
+}
+
+.form {
+    padding: 1em 0 0 ;
+}
+
+#fname {
+    margin: 0 0 10px;
+    width: 100%;
+}
+
+#email {
+    margin: 0 0 10px;
+    width: 100%;
+}
+
+textarea {
+    margin: 0 0 10px;
+    min-height: 130px;
+    width: 100%;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: var(--clr-gold);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media(min-width:900px){
+    .info_container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    input[type=submit] {
+        width: 20%;
+        background-color: var(--clr-gold);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    form {
+        margin: 5em 0 5em;
+    }
+}
+
+/* ------- */
+
 /* footer */
 
 footer {
@@ -536,7 +602,13 @@ li.nav_desk_links  {
 }
 
 /* ------ */
+
+
 /* Contact page */
+
+.info_container {
+    margin: 5em 0 0 ;
+}
 
 @media(min-width: 900px){
 
