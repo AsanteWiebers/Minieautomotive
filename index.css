@@ -610,6 +610,43 @@ li.nav_desk_links  {
     margin: 5em 0 0 ;
 }
 
+/* About page */
+
+.title_about {
+    margin: 1em 0 1em;
+}
+
+.text_about {
+    margin: 0 0 5em;
+    display: block;
+
+}
+
+.img_aboutus {
+    margin: 1em 0 2em ;
+    width: 100%;
+}
+
+@media(min-width:900px){
+    .text_container {
+        display: flex;
+    }   
+    .text_about {
+        max-width: 600px;
+    }
+    .img_aboutus {
+        display: block;
+        margin: 0 0 1em;
+        max-width: 550px ;
+        max-height: 1000px ;
+        height: auto;
+        width: auto;
+    }
+    .about_p {
+        width: 90%;
+    }
+}
+
 @media(min-width: 900px){
 
     /* navigation */
