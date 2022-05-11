@@ -19,6 +19,7 @@ ScrollReveal({
     delay: 400
 });
 
+// Home page 
 
 ScrollReveal().reveal('.logo', {
     delay: 500
@@ -57,5 +58,17 @@ ScrollReveal().reveal('.cta_heading', {
 ScrollReveal().reveal('.contact_heading', {
     delay: 700,
     origin: 'right'
+});
+
+
+// Aflever pakket page 
+
+ScrollReveal().reveal('.repair_image', {
+    delay: 700,
+    origin: 'right'
+});
+ScrollReveal().reveal('.repair_image_2', {
+    delay: 700,
+    origin: 'left'
 });
 

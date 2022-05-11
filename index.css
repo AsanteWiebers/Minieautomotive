@@ -499,6 +499,43 @@ li.nav_desk_links  {
     margin-right: 20px;
 }
 
+
+/* afleverpakket page */
+
+.pakket_container {
+    flex-direction: column;
+    padding: 1em 0 1em;
+}
+
+.pakket_title {
+    margin: 0 0 1em;
+}
+
+.pakket_links {
+    padding: 0 0 .5em;
+}
+
+.pakket_title_2 {
+    margin: 0 0 1em;
+    width: 80%;
+    text-align: left;
+}
+
+.repair_image {
+    width: 100%;
+}
+.repair_image_2 {
+    width: 100%;
+}
+
+@media(min-width: 900px){
+    .pakket_container {
+        flex-direction: row;
+        padding: 4em 6em;
+    }    
+}
+
+
 @media(min-width: 900px){
 
     /* navigation */
