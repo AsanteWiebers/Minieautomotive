@@ -1,5 +1,5 @@
 /* To do's
-    - 
+    - menu open on mobile
     - Mobile menu smooth transition
     - 
  */
@@ -258,7 +258,6 @@ nav {
     background-color: hsl(var(--clr-dark));
     display: flex;
     justify-content: space-between;
-    border: 1px solid orange;
 }
 
 .card {
@@ -293,20 +292,6 @@ nav {
 
 .mob_link {
  padding: 0 0 2.2em;
-}
-
-/* card social icons */
-
-.fa-youtube {
-    color: #ff0000;
-}
-
-.fa-twitter {
-    color: #00aced;
-}
-
-.fa-whatsapp-square {
-    color: #25d366;
 }
 
 /* hero section */
@@ -519,17 +504,17 @@ li.nav_desk_links  {
     /* navigation */
 
     .nav_desk {
+        background-color: hsl(var(--clr-dark));
         align-items: center;
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-        padding: 0 3em;
+        padding: 0 5em;
         width: 100%;
     }
 
     li.nav_desk_links  {
         display: block;
-        /* text-transform: uppercase; */
         letter-spacing: 4px;
     }
 
@@ -541,7 +526,6 @@ li.nav_desk_links  {
 
     .logo {
         font-size: var(--fs-500);
-        
     }
 
     svg.hamburger {
@@ -551,6 +535,10 @@ li.nav_desk_links  {
     h2 {
         text-align: center;
         margin: 2em 0 0 ;
+    }
+
+    h3 {
+        padding: 0 0 1em;
     }
 
     .hero_title {
@@ -582,13 +570,10 @@ li.nav_desk_links  {
 
     /* buttons */
 
-    
-
     .btn-block_light {
         border: none;
         padding: 1em 7em;
         cursor: pointer;
-
     }
 
     .btn-block_dark {
@@ -740,6 +725,10 @@ li.nav_desk_links  {
         justify-content: space-between;
     }
 
+    .footer_time {
+        padding: 0 0 .5em;
+    }
+
     .pay_list {
         display: flex;
         padding: 1em;
@@ -748,7 +737,5 @@ li.nav_desk_links  {
     .pay_links {
         margin-right: 25px;
     }
-
-   
 }   
 
