@@ -401,7 +401,7 @@ nav {
 }
 
 .bg_car {
-    background-image: url(assets/backgrounds/tesla-backgrounds-images.jpg);
+    background-image: url(assets/Backgrounds/tesla-backgrounds-images.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -871,7 +871,7 @@ li.nav_desk_links  {
     }
 
     /* Over ons page */
-    
+
     .text_container {
         display: flex;
     }   
