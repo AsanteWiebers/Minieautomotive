@@ -270,13 +270,15 @@ nav {
 }
 
 #nav_mob_links {
-    display: none;
     background-color: var(--clr-black);
-    position: absolute;
+    display: none;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     text-transform: uppercase;
+    z-index: 1;
 }
 
 .nav_list {
