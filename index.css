@@ -628,25 +628,7 @@ li.nav_desk_links  {
     width: 100%;
 }
 
-@media(min-width:900px){
-    .text_container {
-        display: flex;
-    }   
-    .text_about {
-        max-width: 600px;
-    }
-    .img_aboutus {
-        display: block;
-        margin: 0 0 1em;
-        max-width: 550px ;
-        max-height: 1000px ;
-        height: auto;
-        width: auto;
-    }
-    .about_p {
-        width: 90%;
-    }
-}
+
 
 @media(min-width: 900px){
 
@@ -797,10 +779,10 @@ li.nav_desk_links  {
 
     /* ------ */
 
-    .bg_car {
+    /* .bg_car {
         background-image: url(assets/backgrounds/tesla-backgrounds-images.jpg);
         height: 650px;
-    }
+    } */
 
     .cta_container {
         position: relative;
@@ -845,7 +827,7 @@ li.nav_desk_links  {
         width: 50%;
     }
 
-    /* contact */
+    /* contact section */
 
     .bg_car2 {
         height: 650px;
@@ -868,7 +850,7 @@ li.nav_desk_links  {
         margin: 0 0 3em;
     }
 
-    /* footer */
+    /* footer section */
 
     .footer_container {
         display: flex;
@@ -886,6 +868,26 @@ li.nav_desk_links  {
 
     .pay_links {
         margin-right: 25px;
+    }
+
+    /* Over ons page */
+    
+    .text_container {
+        display: flex;
+    }   
+    .text_about {
+        max-width: 600px;
+    }
+    .img_aboutus {
+        display: block;
+        margin: 0 0 1em;
+        max-width: 550px ;
+        max-height: 1000px ;
+        height: auto;
+        width: auto;
+    }
+    .about_p {
+        width: 90%;
     }
 }   
 
